@@ -28,8 +28,8 @@ function App() {
     Cricket["Ball"] += value;
     setCricket({Score : Cricket.Score, Wicket : Cricket.Wicket, Ball : Cricket.Ball});
   }
-  var over = Cricket.Ball;
-  over = (over%6).toFixed(1);
+  // var over = Cricket.Ball;
+  // over = (over%6).toFixed(1);
   return (
     <div className="App">
       <h3>India has:</h3>
@@ -57,7 +57,7 @@ function App() {
          India Over:{" "}
           <h1 className="overCount">
             {
-              over
+              `${Math.floor(Cricket.Ball/6)}.${Cricket.Ball%6}`
               // Show Over here in the format: "over.ball" eg: 4.5 means 4th over and 5th ball
               // if 1 more ball is thrown then over is now 5.0
               // you have to write logic to form this string from current ball number.
