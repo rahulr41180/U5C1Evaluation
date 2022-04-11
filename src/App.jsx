@@ -29,7 +29,7 @@ function App() {
     setCricket({Score : Cricket.Score, Wicket : Cricket.Wicket, Ball : Cricket.Ball});
   }
   var over = Cricket.Ball;
-  over = (over/6).toFixed(1);
+  over = (over%6).toFixed(1);
   return (
     <div className="App">
       <h3>India has:</h3>
