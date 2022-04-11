@@ -32,7 +32,7 @@ function App() {
   over = (over/6).toFixed(1);
   return (
     <div className="App">
-      <h3>India:</h3>
+      <h3>India has:</h3>
       <div className="banner">
         <div>
           Score:{" "}
