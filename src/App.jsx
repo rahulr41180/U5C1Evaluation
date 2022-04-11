@@ -44,7 +44,7 @@ function App() {
           </h1>
         </div>
         <div>
-          Wicket:{" "}
+          India Wicket:{" "}
           <h1 className="wicketCount">
             {
               // show wicket here
@@ -54,7 +54,7 @@ function App() {
         </div>
 
         <div>
-          Over:{" "}
+         India Over:{" "}
           <h1 className="overCount">
             {
               over
@@ -118,7 +118,7 @@ function App() {
       </div>
 
       {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
-        <h1 className = "status">{Cricket.Score >= 100 ? "India Won" : null}</h1>
+        <h1 className = "status">{Cricket.Score >= 100 ? `India Won ${Cricket.Score}` : null}</h1>
     </div>
   );
 }
